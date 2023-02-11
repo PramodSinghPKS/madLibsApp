@@ -13,8 +13,15 @@ const questionArray = ["Enter a place ?","Enter a name ?","Enter a problem to so
 
 // getting user input
 for (let i = 0; i < numberOfQuestions; i++) {
-    console.log(questionArray[i] + ` (${numberOfQuestions - 1 - i} questions left)`);
+    userInputs.push(prompt(questionArray[i] + ` (${numberOfQuestions - 1 - i} questions left)`));
 }
+
+console.log(userInputs);
+
+alert("All done! Here's your story!");
+
+
+
 
 
 /*
