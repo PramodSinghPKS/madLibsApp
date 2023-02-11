@@ -13,7 +13,7 @@ const questionArray = ["Enter a place ?","Enter a name ?","Enter a problem to so
 
 // getting user input
 for (let i = 0; i < numberOfQuestions; i++) {
-    console.log(questionArray[i]);
+    console.log(questionArray[i] + ` (${numberOfQuestions - 1 - i} questions left)`);
 }
 
 
