@@ -9,11 +9,11 @@ Word got out that the team had "debugged" the ${userInputs[2]}`;
 const numberOfQuestions = 3;
 
 // array of questions
-const questionArray = ["Enter a place","Enter a name","Enter a problem to solve"]
+const questionArray = ["Enter a place ?","Enter a name ?","Enter a problem to solve ?"]
 
 // getting user input
 for (let i = 0; i < numberOfQuestions; i++) {
-    console.log(i);
+    console.log(questionArray[i]);
 }
 
 
