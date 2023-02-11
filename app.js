@@ -1,9 +1,6 @@
 // Varible to store user inputs
 let userInputs = [];
 
-//Story
-let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]}. 
-Word got out that the team had "debugged" the ${userInputs[2]}`;
 
 // number of unique replacements in story
 const numberOfQuestions = 3;
@@ -16,10 +13,18 @@ for (let i = 0; i < numberOfQuestions; i++) {
     userInputs.push(prompt(questionArray[i] + ` (${numberOfQuestions - 1 - i} questions left)`));
 }
 
-console.log(userInputs);
+//console.log(userInputs);
+
+//Story
+let originalStory = `
+<h2>${userInputs[1]}'s Story</h2>
+
+<p>In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]}. 
+Word got out that the team had "debugged" the ${userInputs[2]}</p>`;
+
 
 alert("All done! Here's your story!");
-
+document.write(originalStory);
 
 
 
